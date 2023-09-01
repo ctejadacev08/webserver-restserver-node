@@ -14,7 +14,7 @@ router.get("/", usuarioGet);
 router.post("/", usuarioPost);
 //PUT: sirve para actualizar los recursos
 router.put("/:id", usuarioPut);
-router.delete("/", usuarioDelete);
+router.delete("/:id", usuarioDelete);
 
 router.patch("/", usuarioPatch);
 

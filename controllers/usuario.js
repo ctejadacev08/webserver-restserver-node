@@ -29,10 +29,12 @@ const usuarioPut = (req = request, res = response) => {
   });
 };
 
-const usuarioDelete = (req, res = response) => {
+const usuarioDelete = (req = request, res = response) => {
   //res.send("Hello christian tejada");
+  const id = req.params.id;
   res.json({
     msg: "delete api - controller",
+    id,
   });
 };
 
