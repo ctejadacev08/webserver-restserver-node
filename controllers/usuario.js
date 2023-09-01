@@ -36,10 +36,12 @@ const usuarioDelete = (req, res = response) => {
   });
 };
 
-const usuarioPatch = (req, res = response) => {
+const usuarioPatch = (req = request, res = response) => {
   //res.send("Hello christian tejada");
+  const id = req.params.id;
   res.json({
     msg: "patch api - controller",
+    id,
   });
 };
 
